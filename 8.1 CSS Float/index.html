@@ -10,26 +10,50 @@
   <meta charset="UTF-8">
   <title>CSS Float</title>
   <style>
+    /* container boxes */
     div {
-      display: inline-block;
-      width: 40%;
+      width: 45%;
+      box-sizing: border-box;
+      padding: 1rem;
     }
 
     p {
-      font-size: 2em;
+      font-size: 1.2em;
     }
 
+    /* cat moved to the top corner (right) */
     .cat {
       background-color: aquamarine;
+      float: right;
     }
 
+    .cat img {
+      float: right;
+      margin-left: 1rem;
+      width: 150px;
+      height: auto;
+      display: block;
+    }
+
+    /* dog moved to left */
     .dog {
       background-color: coral;
+      float: left;
+    }
+
+    .dog img {
+      float: left;
+      margin-right: 1rem;
+      width: 150px;
+      height: auto;
+      display: block;
     }
 
     footer {
       text-align: center;
       background-color: blueviolet;
+      clear: both;
+      padding: 0.5rem;
     }
   </style>
 </head>
@@ -48,6 +72,7 @@
   </div>
   <div class="dog">
     <h2>DogCSS</h2>
+   
     <img src="dog.jpeg" alt="dogs in a box" />
     <p class="second-paragraph">Heckin good boys and girls long woofer big ol wow very biscit long woofer heck what a
       nice
